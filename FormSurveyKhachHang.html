@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <title>Survey</title>
 </head>
+<style>
+     th,td {
+        border: 1px solid;
+    }
+
+
+
+/*     table, th, td.center {*/
+/*        margin-left: auto;*/
+/*        margin-right: auto;*/
+/*        border: 1px solid black;*/
+</style>
 <body>
 <form style="line-height: 150%">
     <h1>Market Research Survey</h1>
@@ -58,21 +70,54 @@
     <input type="radio" name="t3" id="t3">
     <label for="t3"> Monthly</label> <br>
     <b>What would you pay for the new product?</b> <br>
-    <table>
-        <tr> <td>$</td>
-            <td> <input type="text" name="m1"></td>
-            <td>.</td>
-            <td> <input type="text" name="m2"></td>
+    <table >
+        <tr> <td  style="border: white">$</td>
+            <td  style="border: white"> <input type="text" name="m1"></td>
+            <td  style="border: white">.</td>
+            <td style="border: white"> <input type="text" name="m2"></td>
         </tr>
         <tr>
-            <td></td>
-            <td>Dollars</td>
-            <td></td>
-            <td>Cents</td>
+            <td  style="border: white"></td>
+            <td  style="border: white">Dollars</td>
+            <td  style="border: white"></td>
+            <td  style="border: white">Cents</td>
+        </tr>
+    </table> <br>
+    <b>What features would you like to see in the new product.</b><br>
+    <textarea id="ft" name="ft" style="width:60%;height:100px"></textarea>
+    <br> Please rate your level of agreement with the following state <br>
+    <table style="width:80%; border: 1px solid black; border-collapse: collapse"  >
+        <tr style="background-color: #e6e6e6">
+            <td style="width:30%"></td>
+            <th style="width:10%">Strongly Disagree</th>
+            <th style="width:10%">Disagree</th>
+            <th style="width:10%">Agree</th>
+            <th style="width:10%">Strongly Agree</th>
+        </tr>
+        <tr>
+            <th style="text-align:left">Our products are priced fairly</th>
+            <td style="text-align:center"><input type="radio" name="price" id="price1"><br>1</td>
+            <td style="text-align:center"><input type="radio" name="price" id="price2"><br>2</td>
+            <td style="text-align:center"><input type="radio" name="price" id="price3"><br>3</td>
+            <td style="text-align:center"><input type="radio" name="price" id="price4"><br>4</td>
+        </tr>
+        <tr  style="background-color: #f2f2f2">
+            <th style="text-align:left">Our products are high quality</th>
+
+            <td style="text-align:center"><input type="radio" name="quality" id="quality1"><br>1</td>
+            <td style="text-align:center"><input type="radio" name="quality" id="quality2"><br>2</td>
+            <td style="text-align:center"><input type="radio" name="quality" id="quality3"><br>3</td>
+            <td style="text-align:center"><input type="radio" name="quality" id="quality4"><br>4</td>
+        </tr>
+        <tr>
+            <th style="text-align:left">You would recommend our product to a friend or a coworker.</th>
+            <td style="text-align:center"><input type="radio" name="rec" id="rec1"><br>1</td>
+            <td style="text-align:center"><input type="radio" name="rec" id="rec2"><br>2</td>
+            <td style="text-align:center"><input type="radio" name="rec" id="rec3"><br>3</td>
+            <td style="text-align:center"><input type="radio" name="rec" id="rec4"><br>4</td>
         </tr>
     </table>
-    <b>What features would you like to see in the new product.</b>
-    <textarea id="ft" name="ft" style="width:100%;height:100px"></textarea>
+<button type="submit" > Submit</button>
 </form>
 
 </body>
