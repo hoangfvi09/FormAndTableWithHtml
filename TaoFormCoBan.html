@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form cơ bản</title>
+</head>
+<style>
+    body {
+        font-family: "lucida console" ;
+    }
+
+    th {
+        color: white;
+        text-align: center;
+        background-color: orange;
+    }
+    #title {
+        color: blue;
+        text-align: center;
+        background-color: #b3ffe6;
+    }
+
+
+</style>
+<body>
+<form style="background-color:#ccffff;width:430px">
+    <fieldset>
+
+<table style="background-color:white;width:400px">
+    <tr> <th colspan="4"> SỞ THÍCH CỦA BẠN </th> </tr>
+    <tr>
+        <td style="text-align:right;color: blue">Họ và tên</td>
+        <td colspan="3"> <input type = "text" name="fullname" size="20"/></td>
+    </tr>
+    <tr>
+        <td style="text-align:right;color: blue"> Email </td>
+        <td colspan="3"> <input type = "text" name="email" size="20"/></td>
+    </tr>
+    <tr>
+        <td  style="text-align:right;color: blue">Sở thích</td>
+        <td > <input type="checkbox" id="sport"> <label for="sport"> Thể thao</label></td>
+        <td><input type="checkbox" id="music"> <label for="music"> Âm nhạc</label></td>
+        <td><input type="checkbox" id="reading"> <label for="reading"> Đọc sách</label></td>
+    </tr>
+    <tr>
+        <td rowspan="3"></td>
+        <td ><input type="checkbox" id="web"> <label for="web"> Lướt web</label></td>
+        <td><input type="checkbox" id="game"> <label for="game"> Chơi game</label></td>
+        <td> <input type="checkbox" id="film"> <label for="film"> Điện ảnh</label></td></tr>
+    </tr>
+    <tr>     <td ><input type="checkbox" id="travel"> <label for="travel"> Du lịch</label></td></tr>
+<tr> <td><button type="Submit"> Gửi thông tin</button></td>
+    <td> <button type="Reset"> Nhập lại </button></td>
+</tr>
+
+</table>
+        </fieldset>
+</form>
+<br>
+<br>
+<form style="width:400px">
+    <fieldset>
+    <table style="background-color:#ffffcc; width:400px">
+    <tr>
+        <td colspan="3" id="title"> ĐĂNG KÝ HỌC VIÊN</td>
+    </tr>
+    <tr>
+        <td style="color: blue">Họ và tên</td>
+        <td colspan="3" > <input type = "text" name="fullname" /></td>
+    </tr>
+    <tr>
+        <td style="color: blue">Ngày sinh</td>
+        <td colspan="2"> <input type = "date" name="birth" /></td>
+    </tr>
+        <tr>
+            <td style="color: blue">Giới tính</td>
+            <td>  <input type="radio" name="gender"/> Nam</td>
+            <td>  <input type="radio" name="gender"/> Nữ </td>
+        </tr>
+        <tr>
+            <td style="color: blue">Địa chỉ</td>
+            <td colspan="2"> <Textarea id="diachi" name="diachi" row="8" cols="30">   </textarea> </td>
+        </tr>
+        <tr>
+            <td style="color: blue"> Lớp</td>
+            <td colspan="2"> <select name="class" id="class" >
+                <option value="chonlop">--Chọn lớp--</option>
+                <option value="lop2">Lớp 2</option>
+                <option value="lop3">Lớp 3</option>
+                <option value="lop4">Lớp 4</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td style="color: blue"> Email </td>
+            <td colspan="2"> <input type = "text" name="email" size="20"/></td>
+        </tr>
+        <tr>
+            <td style="color: blue"> Điện thoại </td>
+            <td colspan="2"> <input type = "text" name="phone" size="20"/></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td> <button type="Submit"> Đăng ký</button><button type="Reset"> Nhập lại </button></td>
+
+        </tr>
+    </table>
+        </fieldset>
+
+</form>
+</body>
+</html>
